@@ -2,24 +2,43 @@
 
 import $ from 'jquery';
 
-import users from './form_data';
+import data from './form_data';
+import {templateInput} from './template_input';
+import {templateSelect} from './template_select';
+import {templateTextArea} from './template_textarea';
 
-var $app = $('.app');
+var $form = $('.dynamic-form');
 
-
-users.forEach(function(user) {
+console.log(templateInput);
+data.forEach(function(datum) {
   var template;
-  if (user.type === 'text' || user.type === 'email' || user.type === 'tel') {
-    template = text;
-  } else if (user.type === 'select') {
-    template = select;
-  } else if (user.type === 'textarea') {
-    template = textarea;
+  if (datum.type === 'text' || datum.type === 'email' || datum.type === 'tel') {
+    template = templateInput;
+    // console.log(template);
+  } else if (datum.type === 'select') {
+    template = templateSelect;
+  } else if (datum.type === 'textarea') {
+    template = templateTextArea;
   }
-  
-  var html = template(user);
-  $app.append( html );
+  // console.log(template);
+  var html = template(datum);
+  $form.append( html );
 });
+
+
+// var dataTypeToTemplate = {
+//   'input': text,
+//   'input': email,
+//   'input': tel,
+//   'select': select,
+//   'textarea': textarea,
+// }
+
+// data.forEach(function(datum) {
+//   var templateInput = dataTypeToTemplate[data[0].type];
+//   var html = templateInput(data);
+//   $form.append( html );
+// });
 
 
 
