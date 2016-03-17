@@ -19,7 +19,7 @@ export default [
    },
    {  
       "type":"email",
-      "label":"Email Address",
+      "label":"Email address",
       "id":"user-email",
       "icon":"fa-envelope",
       "options":[  
@@ -37,7 +37,7 @@ export default [
    },
    {  
       "type":"select",
-      "label":"Select Language",
+      "label":"Select language...",
       "id":"user-language",
       "icon":"",
       "options":[  
@@ -65,7 +65,7 @@ export default [
    },
    {  
       "type":"textarea",
-      "label":"Your Comment",
+      "label":"Your comment",
       "id":"user-comment",
       "icon":"fa-comments",
       "options":[  
@@ -74,7 +74,7 @@ export default [
    },
    {  
       "type":"tel",
-      "label":"Mobil Number",
+      "label":"Mobile number",
       "id":"user-mobile",
       "icon":"fa-mobile-phone",
       "options":[  
@@ -83,7 +83,7 @@ export default [
    },
    {  
       "type":"tel",
-      "label":"Home Number",
+      "label":"Home number",
       "id":"user-phone",
       "icon":"fa-phone",
       "options":[  

@@ -1,1 +1,75 @@
 /* CSS Entry Point */
+
+.app {
+  width: 50%;
+  margin: auto;
+  #user-first-name, #user-last-name, #user-email, #user-website, #user-comment, #user-mobile, #user-phone {
+    width: 100%;
+    position: relative;
+    height: 3em;
+    margin: 1em 0 1em 0;
+    border: 2px solid #C6CCCF;
+    border-radius: 3px;
+    }
+  label, {
+    position: absolute;
+    z-index: 2;
+    font-family: sans-serif;
+    color: #999D9F;
+    font-size: 1em;
+    margin: 25px 0 0 1em; 
+  }  
+}
+
+header {
+  background-color: #428BCA;
+  height: 5em;
+  border-radius: 5px 5px 0 0;
+  border: 2px solid #c5c5c5;
+  h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #fff;
+    margin: 20px 0 0 20px;
+  }
+}
+
+form {
+  border: 2px solid #c5c5c5;
+  padding: 1em;
+  
+}
+
+#user-language {
+  width: 100%;
+  position: relative;
+  height: 3em;
+  margin: 1em 0 1em 0;
+  border: 2px solid #C6CCCF;
+  border-radius: 3px;
+  color: #394D61;
+  }
+
+  .button-wrapper {
+    height: 3em;
+    border-radius: 0 0 5px 5px;
+    background-color: #C9DEF0;
+    border: 2px solid #c5c5c5;
+    display: flex;
+    .submit-button {
+      background-color: #428BCA;
+      height: 30px;
+      border: none;
+      border-radius: 4px;
+      margin: auto 10px;
+      color: white;
+    }
+  }
+
+
+
+
+
+
+
+
