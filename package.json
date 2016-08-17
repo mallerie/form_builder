@@ -18,7 +18,7 @@
     "develop": "parallelshell 'npm run watch' 'npm run server'",
     "deploy": "surge -p \"$(npm prefix)/dist\" -d \"great-form-example.surge.sh\""
   },
-  "author": "",
+  "author": "Mallerie Shirley",
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
